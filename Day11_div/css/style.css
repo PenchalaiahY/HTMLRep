@@ -1,0 +1,15 @@
+a {
+  font-family: arial, sans-serif;
+  text-decoration: none;
+  color: red;
+}
+
+p {
+  color: green;
+}
+
+div {
+  width: 300px;
+  background-color: green;
+  margin: auto;
+}

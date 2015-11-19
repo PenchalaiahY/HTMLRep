@@ -1,0 +1,14 @@
+#headdiv {
+  margin: auto;
+  width: 600px;
+}
+#leftdiv {
+  float:left;
+  width:50%;
+  border-style:dashed;
+}
+#rightdiv {
+  float:left;
+  width:50%;
+  border-style:dashed;
+}
