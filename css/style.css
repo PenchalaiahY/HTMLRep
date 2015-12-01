@@ -1,14 +1,49 @@
-#headdiv {
+div#headdiv {
   margin: auto;
   width: 800px;
 }
-#leftdiv {
-  float:left;
-  width:50%;
-  border-style:dashed;
+h1 {
+  text-align: center;
 }
-#rightdiv {
-  float:left;
-  width:50%;
-  border-style:dashed;
+.content_Wrapper {
+
+  border: 5px solid black;
+  border-radius: 10px;
+}
+.wrapper {
+  margin: auto;
+  display: inline-block;
+  vertical-align: top;
+  width:350px;
+  border-right: 3px solid grey;
+}
+.wrapper > div {
+  width:95%;
+  height: 100%;
+  vertical-align: top;
+
+  padding: 10px;
+}
+.example {
+  width: 90%;
+  margin: auto;
+  border: 3px solid grey;
+  border-radius: 10px;
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+  margin-top: 3px;
+  font-weight: bold;
+}
+.example:hover {
+  cursor: pointer;
+}
+.displayDiv {
+  margin: auto;
+  padding: 10px;
+  display: inline-block;
+}
+.srcWeb {
+  background-color: grey;
+  padding:10px;
 }

@@ -6,51 +6,66 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="headdiv" style="width:100%">
-    <h1>Learn HTML and CSS</h1>
-    <div id="leftdiv">
-      <p>Following list of examples. Right click and view html source for training.</p>
-      <ol>
-        <li>
-          <a href="day1ex1.html">Hello World Example</a>
-        </li>
-        <li>
-          <a href="day2ex1.html">Text Formating</a>
-        </li>
-        <li>
-          <a href="day3ex1.html">Listing items</a>
-        </li>
-        <li>
-          <a href="day5ex1.html">Headings to highlight</a>
-        </li>
-        <li>
-          <a href="day6ex1.html">Using BackQuotes for quotes</a>
-        </li>
-        <li>
-          <a href="Day7_Anchor/Day7ex1.html">Linking websites</a>
-        </li>
-        <li>
-          <a href="Day8_css/Day8ex1.html">Applying Style to webpage</a>
-        </li>
-        <li>
-          <a href="Day10_images/Day10ex1.html">Adding Images to webpage</a>
-        </li>
-        <li>
-          <a href="Day11_div/Day11ex1.html">Formating webpages by Div</a>
-        </li>
-      </ol>
+    <div id="headdiv">
+      <h1>Learn HTML and CSS</h1>
+      <div class="content_Wrapper">
+        <div class="wrapper">
+          <div id="leftdiv">
+            <p>Following list of examples. Right click and view html source for training.</p>
+            <div class="example" onclick="changeContent('day1ex1.html')">Hello World!</div>
+            <div class="example" onclick="changeContent('day2ex1.html')">Text Formating</div>
+            <div class="example" onclick="changeContent('day3ex1.html')">Listing items</div>
+            <div class="example" onclick="changeContent('day5ex1.html')">Headings to highlight</div>
+            <div class="example" onclick="changeContent('day6ex1.html')">Using BackQuotes for quotes</div>
+            <div class="example" onclick="changeContent('Day7_Anchor/Day7ex1.html')">Linking websites</div>
+            <div class="example" onclick="changeContent('Day8_css/Day8ex1.html')">Applying Style to webpage</div>
+            <div class="example" onclick="changeContent('Day10_images/Day10ex1.html')">Adding Images to webpage</div>
+            <div class="example" onclick="changeContent('Day11_div/Day11ex1.html')">Formating webpages by Div</div>
+          </div>
+          <div id="rightdiv" style="border-top:3px dashed grey;">
+            <p>Following are list of Exercises to try. <br/>
+              <strong style="color:red;">Advice: Please don't view source code before trying</strong>
+            </p>
+            <div class="example" onclick="changeContent('Exercise/Exercise1')">My First Webpage</div>
+          </div>
+        </div>
+        <div class="displayDiv">
+          <input id="source" type="button" value="Source" class="srcWeb" onclick="changeDisplayStyle('source')" />
+          <input id="webpage" type="button" value="HTMLPage" class="srcWeb" onclick="changeDisplayStyle('webpage')" />
+          <div id="sourceBlock" style="border: 3px solid grey; display: none;width:300px">
+          </div>
+          <div id="webpageBlock" style="border: 3px solid black;">
+            <h4>Click Example or exercise to show information here !!...</h4>
+          </div>
+        </div>
+      </div>
     </div>
-    <br /><br /><br/>
-    <div id="rightdiv">
-      <p>Following are list of Exercises to try.
-        <strong style="color:red;">Advice: Please don't view source code before trying</strong>
-      </p>
-      <ol>
-        <li>
-          <a href="Exercise/Exercise1">My First Webpage</a>
-        </li>
-      </ol>
-    </div>
-  </div>
+    <script type="text/javascript">
+      function changeDisplayStyle(id){
+        document.getElementById(id).style.backgroundColor = "black";
+        document.getElementById(id).style.color = "white";
+        document.getElementById(id + "Block").style.display= "block";
+        if(id.indexOf("source") > -1){
+          document.getElementById("webpage").style.backgroundColor = "grey";
+          document.getElementById("webpageBlock").style.display= "none";
+        }
+        else {
+          document.getElementById("source").style.backgroundColor = "grey";
+          document.getElementById("sourceBlock").style.display= "none";
+        }
+      }
+      function changeContent(path){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (xhttp.readyState == 4 && xhttp.status == 200) {
+            document.getElementById("sourceBlock").firstChild.nodeValue = xhttp.responseText;
+            document.getElementById("webpageBlock").innerHTML = xhttp.responseText;
+          }
+        };
+        //alert(document.getElementById("webpage").src);
+        xhttp.open("GET", path, true);
+        xhttp.send();
+      }
+    </script>
   </body>
 </html>
