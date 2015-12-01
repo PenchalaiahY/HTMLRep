@@ -1,0 +1,91 @@
+#main_wrapper {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  border-style: solid;
+}
+h1 {
+  color: green;
+}
+#info_wrapper {
+  width: 770px;
+  height: 350px;
+  margin: auto;
+}
+#info_wrapper > div {
+  display: inline-block;
+}
+.like {
+  border: 3px solid blue;
+  border-radius: 10px;
+  background-color: lightblue;
+  text-align: center;
+  width: 500px;
+  height: 20px;
+  margin:auto;
+  padding: 5px
+}
+.like > * {
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  vertical-align: top;
+  font-size: 20px;
+}
+#left_photo_div {
+  padding: 10px 10px;
+  width: 200px;
+}
+#right_about_me {
+  padding-left: 30px;
+  text-align: justify;
+  width: 500px;
+}
+#about_me {
+  vertical-align: bottom;
+}
+#myLearnings{
+  padding-left: 10px;
+  border-top: 1px dashed grey;
+  height: 200px;
+}
+.learn {
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: 210px;
+  height: 85px;
+  background-color: lightblue;
+  padding: 10px;
+}
+.learn > * {
+  display: inline-block;
+  width: 100px;
+  height: 75px;
+
+  margin: auto;
+}
+.learn > div > p {
+  display: inline;
+  vertical-align: middle;
+  font-weight: bolder;
+}
+.learn > div > div {
+  vertical-align: middle;
+  margin: auto;
+}
+.learn:hover {
+  cursor: pointer;
+}
+div#learnWrapper {
+    width: 780px;
+    height: 140px;
+    margin: auto;
+}
+div#learnWrapper > div {
+  display: inline-block;
+  margin: 5px;
+  vertical-align: middle;
+}
+div#learnWrapper > div:hover {
+  padding: 20px 15px;
+}
