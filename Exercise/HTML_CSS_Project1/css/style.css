@@ -1,0 +1,131 @@
+body {
+  background: url("../img/main_background.jpg");
+  color: rgb(158,138,103);
+  font-family: sans-serif;
+}
+/* Header Section */
+.overflowHidden {
+  overflow: hidden;
+}
+header{
+  background-color: rgb(211,200,181);
+  border-radius: 20px;
+  padding-top: 20px;
+  position: relative;
+  top: -30px;
+}
+header .logo {
+  font-size: 50px;
+  padding-left: 50px;
+  margin: 0px;
+  color: rgb(108,88,53);
+  text-shadow: 5px 5px 3px grey;
+  text-align: center;
+  display: inline;
+}
+header li {
+  display: inline;
+  vertical-align: middle;
+  border: 3px solid rgb(158,138,103);
+  border-radius: 10px;
+  padding: 20px 10px 10px 10px;
+  color: rgb(158,138,103);
+  margin-left: 10px;
+}
+header ul {
+  position: relative;
+  top:10px;
+}
+header a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+  color: inherit;
+}
+header li:hover {
+  background: rgb(181,170,151);
+  cursor: pointer;
+  color: white;
+}
+/* End of Header Section */
+
+/* Section Info */
+.sectionTitle {
+  border-top: 2px solid rgb(201,190,171);
+  border-bottom: 2px solid rgb(201,190,171);
+  border-radius: 10px;
+  margin: 0px;
+  padding: 0px 10px;
+  display: block;
+}
+.sectionTitle h2 {
+    text-align: center;
+    text-shadow: 3px 3px 4px lightgrey;
+    vertical-align: middle;
+    font-size: 30px;
+    margin-top: 20px;
+}
+/* End of Section Info */
+/* Main Content */
+.maincontent {
+  clear: both;
+}
+/* 3 boxed sections */
+.section {
+  border: 2px solid rgb(201,190,171);
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.vision {
+  width: 280px;
+  margin: auto;
+}
+
+.vision img {
+  height: 170px;
+}
+.vision h3, h5 {
+  margin-bottom: 0px;
+}
+.vision h5 {
+  color: rgb(218,198,163);
+}
+.vision p {
+  text-align: justify;
+  text-indent: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.vision a {
+  text-align: right;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.vision a:after{
+  content: '...'
+}
+/* 3 Boxed sections ends here */
+
+/* hero unit starts here */
+.heroUnit {
+  background: url("../img/hero_img.png") no-repeat;
+  background-size: 1020px 480px;
+  height: 480px;
+  margin-top: 10px;
+}
+/* End of Hero Unit */
+
+/* End of Main content */
+/* Footer Start */
+footer {
+  clear: both;
+  margin: 10px;
+  background-color: rgb(211,200,181);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+/* Footer Ends */

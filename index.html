@@ -34,7 +34,7 @@
           <input id="webpage" type="button" value="HTMLPage" class="srcWeb" onclick="changeDisplayStyle('webpage')" />
           <div id="sourceBlock" style="border: 3px solid grey; display: none;width:300px">
           </div>
-          <div id="webpageBlock" style="border: 3px solid black;">
+          <div id="webpageBlock" style="border: 3px solid black; backgroundColor: black;">
             <h4>Click Example or exercise to show information here !!...</h4>
           </div>
         </div>
@@ -62,7 +62,7 @@
             document.getElementById("webpageBlock").innerHTML = xhttp.responseText;
           }
         };
-        
+
         //alert(document.getElementById("webpage").src);
         xhttp.open("GET", path, true);
         xhttp.send();
