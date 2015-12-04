@@ -1,7 +1,13 @@
 body {
   background: url("../img/main_background.jpg");
-  color: rgb(158,138,103);
+  color: rgb(128,108,73);
   font-family: sans-serif;
+}
+p {
+  font-size: 14px;
+  text-align: justify;
+  text-indent: 10px;
+  margin-top: 10px;
 }
 /* Header Section */
 .overflowHidden {
@@ -19,18 +25,22 @@ header .logo {
   padding-left: 50px;
   margin: 0px;
   color: rgb(108,88,53);
-  text-shadow: 5px 5px 3px grey;
+  text-shadow: 4px 4px 3px grey;
   text-align: center;
   display: inline;
+}
+.logo:hover {
+  text-shadow: 6px 6px 3px grey;
+  cursor: pointer;
 }
 header li {
   display: inline;
   vertical-align: middle;
-  border: 3px solid rgb(158,138,103);
+  border: 3px solid rgb(128,108,73);
   border-radius: 10px;
-  padding: 20px 10px 10px 10px;
-  color: rgb(158,138,103);
+  color: rgb(128,108,73);
   margin-left: 10px;
+  padding: 20px 10px 10px 10px;
 }
 header ul {
   position: relative;
@@ -43,7 +53,7 @@ header a {
   color: inherit;
 }
 header li:hover {
-  background: rgb(181,170,151);
+  background: rgb(151,140,121);
   cursor: pointer;
   color: white;
 }
@@ -55,7 +65,7 @@ header li:hover {
   border-bottom: 2px solid rgb(201,190,171);
   border-radius: 10px;
   margin: 0px;
-  padding: 0px 10px;
+  padding: 0px 0px 10px;
   display: block;
 }
 .sectionTitle h2 {
@@ -63,7 +73,10 @@ header li:hover {
     text-shadow: 3px 3px 4px lightgrey;
     vertical-align: middle;
     font-size: 30px;
-    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.sectionTitle h5 {
+  text-align: center;
 }
 /* End of Section Info */
 /* Main Content */
@@ -90,12 +103,6 @@ header li:hover {
 .vision h5 {
   color: rgb(218,198,163);
 }
-.vision p {
-  text-align: justify;
-  text-indent: 10px;
-  font-size: 14px;
-  margin-top: 10px;
-}
 .vision a {
   text-align: right;
   display: block;
@@ -105,7 +112,7 @@ header li:hover {
   font-weight: bolder;
   font-size: 18px;
 }
-.vision a:after{
+.vision a:after {
   content: '...'
 }
 /* 3 Boxed sections ends here */
@@ -116,16 +123,110 @@ header li:hover {
   background-size: 1020px 480px;
   height: 480px;
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+.heroUnit .leftsideContent {
+  clear: both;
+  width: 300px;
+  height: 460px;
+  display: inline-block;
+}
+.contentWrapper {
+  margin-top: 300px;
+  margin-bottom: 0px;
 }
 /* End of Hero Unit */
 
+/* Powerful Insight starts here */
+
+/* Powerful Insight ends here */
+.powerfulInsight {
+  background-color: rgb(61,50,31);
+  margin-top: 10px;
+  clear: both;
+  color: white;
+}
+.powerfulInsight h2 {
+  margin-bottom: 0px;
+}
+.powerfulInsight img {
+  width: 400px;
+  margin: 30px;
+  border-radius: 15px;
+}
+.powerfulInsight .contentWrapper {
+  padding-right: 70px;
+  margin-top: 150px;
+}
+.powerfulInsight a {
+  display: block;
+  text-align: center;
+  background-color: rgb(211,200,181);
+  border-radius: 20px;
+  border: 3px solid white;
+  color: rgb(88,68,33);
+  text-decoration: none;
+}
+.powerfulInsight a:hover {
+  background-color: rgb(251,240,221);
+  color: black;
+}
+/* Second insight */
+.secondInsight {
+  background-color: inherit;
+  color: inherit;
+}
+.secondInsight a {
+  border-color: black;
+}
+/* End of powerfulInsight */
 /* End of Main content */
+
 /* Footer Start */
 footer {
   clear: both;
-  margin: 10px;
+  margin-top: 10px;
   background-color: rgb(211,200,181);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  position: relative;
+}
+footer div {
+  margin-top: 30px;
+}
+footer li {
+  display: block;
+  margin-left: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: bolder;
+}
+footer .logo, .logosub {
+  padding-left: 50px;
+  margin-bottom: 0px;
+}
+.logosub {
+  font-style: italic;
+}
+footer .index {
+  text-align: center;
+}
+footer .followus {
+  text-align: center;
+}
+.followus h3 {
+  margin-bottom: 10px;
+}
+.followus img {
+  width: 30px;
+  margin-right: 10px;
+}
+footer h6 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 /* Footer Ends */
