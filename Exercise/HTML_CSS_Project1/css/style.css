@@ -9,10 +9,13 @@ p {
   text-indent: 10px;
   margin-top: 10px;
 }
-/* Header Section */
 .overflowHidden {
   overflow: hidden;
 }
+img {
+  border-radius: 15px;
+}
+/* Header Section */
 header{
   background-color: rgb(211,200,181);
   border-radius: 20px;
@@ -33,14 +36,14 @@ header .logo {
   text-shadow: 6px 6px 3px grey;
   cursor: pointer;
 }
+/* Navigation Bar */
 header li {
   display: inline;
-  vertical-align: middle;
   border: 3px solid rgb(128,108,73);
   border-radius: 10px;
-  color: rgb(128,108,73);
   margin-left: 10px;
   padding: 20px 10px 10px 10px;
+  color: rgb(128,108,73);
 }
 header ul {
   position: relative;
@@ -64,7 +67,6 @@ header li:hover {
   border-top: 2px solid rgb(201,190,171);
   border-bottom: 2px solid rgb(201,190,171);
   border-radius: 10px;
-  margin: 0px;
   padding: 0px 0px 10px;
   display: block;
 }
@@ -79,10 +81,12 @@ header li:hover {
   text-align: center;
 }
 /* End of Section Info */
+
 /* Main Content */
 .maincontent {
   clear: both;
 }
+
 /* 3 boxed sections */
 .section {
   border: 2px solid rgb(201,190,171);
@@ -125,21 +129,12 @@ header li:hover {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.heroUnit .leftsideContent {
-  clear: both;
-  width: 300px;
-  height: 460px;
-  display: inline-block;
-}
 .contentWrapper {
   margin-top: 300px;
-  margin-bottom: 0px;
 }
 /* End of Hero Unit */
 
 /* Powerful Insight starts here */
-
-/* Powerful Insight ends here */
 .powerfulInsight {
   background-color: rgb(61,50,31);
   margin-top: 10px;
@@ -152,7 +147,6 @@ header li:hover {
 .powerfulInsight img {
   width: 400px;
   margin: 30px;
-  border-radius: 15px;
 }
 .powerfulInsight .contentWrapper {
   padding-right: 70px;
