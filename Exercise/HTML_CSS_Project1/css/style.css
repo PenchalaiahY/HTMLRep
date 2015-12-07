@@ -1,12 +1,14 @@
+/*Main background is texture image is being replicated */
 body {
   background: url("../img/main_background.jpg");
-  color: rgb(128,108,73);
+  /* color and font used for entire page */
+  color: rgb(58,38,3);
   font-family: sans-serif;
 }
+/* all p tags will get following settings */
 p {
   font-size: 14px;
   text-align: justify;
-  text-indent: 10px;
   margin-top: 10px;
 }
 .overflowHidden {
@@ -17,21 +19,25 @@ img {
 }
 /* container_12 */
 .container_12 {
-  background-color: rgb(255,244,225);
+  background-color: rgb(255,255,255);
 }
 /* Header Section */
+/* Header is an container for 2 grids
+  This div is positioned relative with top -30px */
 header{
-  background-color: rgb(211,200,181);
+  background-color: rgb(220,220,220);
   border-radius: 20px;
   padding-top: 20px;
   position: relative;
   top: -30px;
 }
+
+/* Left side logo style using grid_4 */
 header .logo {
   font-size: 50px;
   padding-left: 50px;
   margin: 0px;
-  color: rgb(108,88,53);
+  color: rgb(78,58,23);
   text-shadow: 4px 4px 3px grey;
   text-align: center;
   display: inline;
@@ -41,28 +47,29 @@ header .logo {
   cursor: pointer;
 }
 /* Navigation Bar */
-header li {
-  display: inline;
-  border: 3px solid rgb(128,108,73);
-  border-radius: 10px;
-  margin-left: 10px;
-  padding: 20px 10px 10px 10px;
-  color: rgb(128,108,73);
-}
 header ul {
   position: relative;
   top:10px;
+}
+/* List of Navigation going inline with border added to it*/
+header li {
+  display: inline;
+  border: 3px solid rgb(58,38,3);
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 20px 10px 10px 10px;
+  color: rgb(78,58,23);
+}
+header li:hover {
+  background: rgb(151,140,121);
+  cursor: pointer;
+  color: white;
 }
 header a {
   text-decoration: none;
   font-weight: bolder;
   font-size: 20px;
   color: inherit;
-}
-header li:hover {
-  background: rgb(151,140,121);
-  cursor: pointer;
-  color: white;
 }
 /* End of Header Section */
 
@@ -72,6 +79,7 @@ header li:hover {
   border-bottom: 2px solid rgb(201,190,171);
   border-radius: 10px;
   padding: 0px 0px 10px;
+  margin-bottom: 20px;
   display: block;
 }
 .sectionTitle h2 {
@@ -90,16 +98,25 @@ header li:hover {
 .maincontent {
   clear: both;
 }
-
 /* 3 boxed sections */
 .section {
   border: 2px solid rgb(201,190,171);
   border-radius: 5px;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .section:hover {
   cursor: pointer;
 }
+/* overiding alpha and omega for center content, since border taking up 12 px */
+.section.alpha {
+  margin-left: 4px;
+}
+.section.omega {
+  margin-right: 4px;
+}
+
+/* .vision class used to center the content inside the section grid */
 .vision {
   width: 280px;
   margin: auto;
@@ -111,7 +128,7 @@ header li:hover {
   margin-bottom: 0px;
 }
 .vision h5 {
-  color: rgb(218,198,163);
+  color: rgb(188,168,133);
 }
 .vision h6 {
   font-weight: normal;
@@ -135,23 +152,24 @@ header li:hover {
 
 /* hero unit starts here */
 .heroUnit {
-  background: url("../img/hero_img.png") no-repeat;
-  background-size: 1020px 480px;
-  height: 480px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: rgb(240,240,240);
+  color: black;
+  clear: both;
 }
+/* Wraps the texts and pushes it to 150px from the top. */
 .contentWrapper {
-  margin-top: 300px;
+  margin-top: 150px;
+  margin-left: 10px;
+  border-bottom: 4px solid rgb(200,200,200);
 }
 /* End of Hero Unit */
 
 /* Powerful Insight starts here */
 .powerfulInsight {
-  background-color: rgb(61,50,31);
   margin-top: 10px;
   clear: both;
-  color: white;
+  border: 2px solid rgb(201,190,171);
+  border-radius: 10px;
 }
 .powerfulInsight h2 {
   margin-bottom: 0px;
@@ -160,16 +178,17 @@ header li:hover {
   width: 400px;
   margin: 30px;
 }
-.powerfulInsight .contentWrapper {
+.powerfulInsight .contentWrap {
   padding-right: 70px;
   margin-top: 150px;
 }
+/* changes anchor tag into button */
 .powerfulInsight a {
   display: block;
   text-align: center;
   background-color: rgb(211,200,181);
   border-radius: 20px;
-  border: 3px solid white;
+  border: 3px solid grey;
   color: rgb(88,68,33);
   text-decoration: none;
 }
@@ -178,12 +197,17 @@ header li:hover {
   color: black;
 }
 /* Second insight */
+/* changes layout of powerfulInsight */
 .secondInsight {
-  background-color: inherit;
-  color: inherit;
+  border: none;
 }
-.secondInsight .contentWrapper {
-  padding-right: 0px;
+.secondInsight .firstdiv {
+  border-right: 5px;
+  border-style: ridge;
+  height: 465px;
+}
+.secondInsight .contentWrap {
+  padding-right: 20px;
   padding-left: 30px;
 }
 .secondInsight img {
@@ -200,17 +224,13 @@ header li:hover {
 footer {
   clear: both;
   margin-top: 10px;
-  background-color: rgb(211,200,181);
+  background-color: rgb(220,220,220);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  position: relative;
 }
+/* Pushes all div grid by 30px down */
 footer div {
   margin-top: 30px;
-}
-footer li {
-  display: block;
-  margin-left: 5px;
 }
 footer a {
   text-decoration: none;
@@ -218,6 +238,7 @@ footer a {
   font-size: 14px;
   font-weight: bolder;
 }
+/* applying style to footer logo */
 footer .logo, .logosub {
   padding-left: 50px;
   margin-bottom: 0px;
@@ -225,10 +246,25 @@ footer .logo, .logosub {
 .logosub {
   font-style: italic;
 }
+/* footer menu styling */
 footer .index {
   text-align: center;
   font-size: 18px;
+  vertical-align: middle;
 }
+.index li {
+    display: inline;
+    margin-left: 0px;
+
+}
+.index li:before {
+  content: '- ';
+}
+.index li:first-child:before {
+  content: '';
+}
+
+/* FollowUs div grid style */
 footer .followus {
   text-align: center;
 }
@@ -239,6 +275,8 @@ footer .followus {
   width: 30px;
   margin-right: 10px;
 }
+
+/* copyright infomation style */
 footer h6 {
   text-align: center;
   margin-top: 10px;
